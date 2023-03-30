@@ -1,0 +1,30 @@
+The answer choices for the math question are:
+x = 5
+x = 7.5
+x = 10
+x = 15 - 2x
+A
+What is the formula for finding the area of a triangle?
+A = bh
+A = (b x h)/2
+A = b + h
+A = b x h
+B
+Which of the following is a prime number?
+10
+15
+23
+30
+C
+What is the slope-intercept form of a linear equation?
+y = mx + b
+x = my + b
+y = mx - b
+x = my - b
+A
+What is the Pythagorean theorem?
+a^2 + b^2 = c^2
+a^2 - b^2 = c^2
+a^2 + b^2 = 2c
+a^2 x b^2 = c^2
+A
