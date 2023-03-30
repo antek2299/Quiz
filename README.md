@@ -2,7 +2,7 @@
 
 very hard Quiz.
 
-in English
+in English.
 
 simple general knowledge quiz.
 
