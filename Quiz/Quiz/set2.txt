@@ -1,0 +1,30 @@
+What is the purpose of an algorithm?
+To provide a mathematical proof
+To automate a task or problem-solving process
+To simulate a real-world phenomenon
+To analyze data and generate insights
+B
+What is a compiler?
+A tool that converts high-level programming code to machine code
+A software program that enables communication between different hardware components
+An operating system that manages system resources and user interfaces
+A database management system that organizes and retrieves data
+A
+What is a data structure?
+A way of representing and organizing data in a computer program
+An algorithm for sorting and searching data
+A type of computer hardware that stores and retrieves data
+A programming language used for web development
+A
+What is an API?
+A programming language used for mobile app development
+A set of rules and protocols for communication between software applications
+A type of computer network used for sharing files
+An algorithm for analyzing data
+B
+What is a network protocol?
+A set of rules and standards for communication between devices on a network
+A type of software used for database management
+A programming language used for artificial intelligence
+An algorithm for encrypting and decrypting data.
+A
