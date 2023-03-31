@@ -3,8 +3,8 @@
 #include <string>
 
 int main() {
-	int loop;
-	std::string conti?;
+	int loop = 0;
+	std::string conti;
 
 	//for draw
 	std::string set;
@@ -27,17 +27,6 @@ int main() {
 	std::string choice;
 	int set_choice;
 
-
-	//file opener
-	std::fstream quiz;
-	quiz.open(set, std::ios::in);
-
-	//open check
-	if (quiz.good() == false) {
-		std::cout << "failed to open file";
-		exit(0);
-	}
-
 	while (true) {
 
 		if (loop == 0) {
@@ -50,11 +39,11 @@ int main() {
 			std::cout << "\n";
 		}
 
-		if (loop == 0) {
-			std::cout << "whether you want to continue playing?\n";
-			std::cout << "yes or not\n";
+		if (loop > 0) {
+			std::cout << "you want to continue playing?\n";
+			std::cout << "yes or no\n";
 			std::cin >> conti;
-			if (conti == "no"){
+			if (conti == "no") {
 				break;
 			}
 		}
@@ -81,22 +70,32 @@ int main() {
 				std::cout << "there is no such option"; break;
 			}
 		}
-		else
-
+		else{
 			//set drawing mechanism
 			srand(time(NULL));
-		draw = rand() % 5;
+			draw = rand() % 5;
 
-		switch (draw) {
-		case 0: set = "set1.txt"; break;
-		case 1: set = "set2.txt"; break;
-		case 2: set = "set3.txt"; break;
-		case 3: set = "set4.txt"; break;
-		case 4: set = "set5.txt"; break;
+			switch (draw) {
+			case 0: set = "set1.txt"; break;
+			case 1: set = "set2.txt"; break;
+			case 2: set = "set3.txt"; break;
+			case 3: set = "set4.txt"; break;
+			case 4: set = "set5.txt"; break;
+			}
+
 		}
 
+		//file opener
+		std::fstream quiz;
+		quiz.open(set, std::ios::in);
 
-		std::cout << "Question" << nr << "\n";
+		//open check
+		if (quiz.good() == false) {
+			std::cout << "failed to open file";
+			exit(0);
+		}
+
+		std::cout << "Question " << nr << "\n";
 
 		if (nr == 5) {
 			nr = 1;
@@ -130,7 +129,7 @@ int main() {
 			std::cout << "C. " << anser_c[i] << "\n";
 			std::cout << "D. " << anser_d[i] << "\n";
 
-			std::cout << "your answer:\n";
+			std::cout << "your answer: ";
 			std::cin >> anser;
 
 			if (anser == corect[i]) {
@@ -139,12 +138,15 @@ int main() {
 
 			}
 			else
-				std::cout << "wrong no point. correct answer:" << corect[i] << "\n";
+				std::cout << "wrong no point. correct answer: " << corect[i] << "\n";
+
+			std::cin.get();
+			std::cin.get();
+			system("cls");
 		}
 
-		std::cout << "end of quiz. points scored:" << points;
+		std::cout << "end of quiz. points scored: " << points;
 
+		quiz.close();
 	}
-
-	quiz.close();
 }
